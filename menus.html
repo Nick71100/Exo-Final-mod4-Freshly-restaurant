@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly Restaurant Menus Exo</title>
+    <link rel="icon" type="image/png" href="./assets/ressources/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/style_menu.css">
+</head>
+<body>
+    <header>
+        <div class="head-left">           
+                <img src="./assets/ressources/images/logo.png" alt="Logo" class="logo">
+                <h1><strong>Freshly Restaurant</strong></h1>           
+        </div>
+        <div class="head-right">
+            <nav>
+                <ul>
+                    <li ><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li class="current"><a href="./menus.html">Menus</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="menus">
+            <div>
+                <h1>Details of our menus</h1>
+                <p>Choose your main course according to your menu !</p>
+                <div class="container">
+                    <div class="controls">
+                        <button type="button" data-filter="all">ALL</button>
+                        <button type="button" data-filter=".meat">MEAT</button>
+                        <button type="button" data-filter=".vegan">VEGAN</button>
+                        <button type="button" data-filter=".fish">FISH</button>
+                    </div>
+                    <div class="content">
+                        <div class="mix fish" data-order="1">
+                            <figure>
+                                <img src="./assets/ressources/menus/fish-01.jpg" alt="fish-01" class="img_menu">
+                                <figcaption>
+                                    <img src="./assets/ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife">
+                                    <p>Grilled mussels</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="mix vegan" data-order="2">
+                            <figure>
+                                <img src="./assets/ressources/menus/vegan-03.jpg" alt="vegan-03" class="img_menu">
+                                <figcaption>
+                                    <img src="./assets/ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife">
+                                    <p>Mixed vegetables</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="mix meat" data-order="3">
+                            <figure>
+                                <img src="./assets/ressources/menus/meat-03.jpg" alt="meat-03" class="img_menu">
+                                <figcaption>
+                                    <img src="./assets/ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife">
+                                    <p>Freshly kebabs</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="mix fish" data-order="4">
+                            <figure>
+                                <img src="./assets/ressources/menus/fish-02.jpg" alt="fish-02" class="img_menu">
+                                <figcaption>
+                                    <img src="./assets/ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife">
+                                    <p>Cajun shrimp</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="mix meat" data-order="5">
+                            <figure>
+                                <img src="./assets/ressources/menus/meat-01.jpg" alt="meat-01" class="img_menu">
+                                <figcaption>
+                                    <img src="./assets/ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife">
+                                    <p>Freshly burger</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="mix vegan" data-order="6">
+                            <figure>
+                                <img src="./assets/ressources/menus/vegan-02.jpg" alt="vegan-02" class="img_menu">
+                                <figcaption>
+                                    <img src="./assets/ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife">
+                                    <p>Grilled eggplants</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="mix meat" data-order="7">
+                            <figure>
+                                <img src="./assets/ressources/menus/meat-02.jpg" alt="meat-02" class="img_menu">
+                                <figcaption>
+                                    <img src="./assets/ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife">
+                                    <p>Beef stew with pasta</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="mix fish" data-order="8">
+                            <figure>
+                                <img src="./assets/ressources/menus/fish-03.jpg" alt="fish-03" class="img_menu">
+                                <figcaption>
+                                    <img src="./assets/ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife">
+                                    <p>Grilled salmon</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="mix vegan" data-order="9">
+                            <figure>
+                                <img src="./assets/ressources/menus/vegan-01.jpg" alt="vegan-01" class="img_menu">
+                                <figcaption>
+                                    <img src="./assets/ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife">
+                                    <p>Vegetable Jambalaya</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Deserts</h2>
+            <p>Here are the deserts you can choose to finish your meal (included in your menu).</p>
+            <div class=" content desserts_box">
+                <img src="./assets/ressources/menus/desert-01.jpg" alt="desert-01">
+                <img src="./assets/ressources/menus/desert-02.jpg" alt="desert-02">
+                <img src="./assets/ressources/menus/desert-03.jpg" alt="desert-03">
+            </div>
+        </section>
+
+        <section>
+            <h2>Cocktails</h2>
+            <p>Soft drinkgs are included, but if you want you can order one of our excellent cocktails (not included in the menu).</p>
+            <div class="content cocktail_box">
+                <img src="./assets/ressources/menus/drink-01.jpg" alt="drink-01">
+                <img src="./assets/ressources/menus/drink-02.jpg" alt="drink-02">
+                <img src="./assets/ressources/menus/drink-03.jpg" alt="drink-03">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="footer_box">
+                <h3>Opening hours</h3>
+                <p>Monday: Closed</p>
+                <p>Tue-Wed : 9am - 10pm</p>
+                <p>Thu-Fri : 9am - 10pm</p>
+                <p>Sat-Sun : 5pm - 10pm</p>
+            </div>
+            <div class="footer_box">
+                <h3>Contact</h3>
+                <p>13 Christopher Street</p>
+                <p>New York,</p>
+                <p>NY 10014-3543</p>
+                <p class="tel">+01 2000 800 9999</p>
+            </div>
+            <div class="footer_box">
+                <h3>Social networks</h3>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://fr.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+        
+        <div class="foot_3wA">
+            <img src="./assets/ressources/images/logo-3wa.png" alt="Propriété de la 3W Academy">
+            <p>
+                Cet exercice de <a href="#">3W Academy</a> est mis à disposition <a href="#">pour l'usage personnel des étidiants. Pas de  Rediffusion - Atttribution - Pas d'utilisation Commerciale - Pas de Modification - International</a>.
+            </p>
+            <p>
+                Les autorisations au-delà du champ de cettte license peuvent être obtenues auprès de <a href="#">contact@3wa.fr</a>. Les maquettes ont été réééalisées par <a href="#">Catherine Denos</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/55a698f7a1.js" crossorigin="anonymous"></script>
+    <script src="./assets/ressources/mixitup.min.js"></script>
+    <script>
+        var mixer = mixitup('.content');
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    font-family: "Athiti", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: 1s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-shadow: inset 0px 40px 40px 0px #dad5c7f1;
+}
+
+header {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.head-left { 
+    padding: 30px 0 5px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.head-left h1 strong {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h1::before, h1::after, h2::before, h2::after, main h3::before, main h3::after, .menu p::before {
+    font-family: FontAwesome;
+    content: '\f005';
+    font-size: 10px;
+    margin: 10px;
+    color: #950000;
+    position: relative;
+    
+}
+
+h1::before, h1::after, h2::before, h2::after {
+    bottom: 5px;
+}
+
+header a, main a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    padding: 0;
+    
+}
+
+nav ul li{
+    list-style: none;
+    border-bottom: 1px solid #4c4343;
+    padding: 10px 0;
+    background-color: #ebe2db;
+    a {
+        font-weight: 600;
+    }
+}
+
+nav ul li:hover, .menu a:hover {
+    background-color: #950000;
+}
+
+.current {
+    background-color: #4c4343;
+    a {
+        color: #fff;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Merienda", cursive;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Merienda", cursive;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+}
+
+figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 7px;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+figcaption:hover {
+    opacity: 1;
+}
+
+figcaption::before{
+    content: "";
+    border: 5px solid #fff;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+}
+
+.foot {
+    text-align: center;
+    background-image: url(../ressources/images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 30px 20px 60px;
+}
+
+
+.foot h3 {
+    border-bottom: 1px dashed #fff;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.foot p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.foot a i {
+    color: #fff;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.tel {
+    padding-top: 15px;
+}
+
+.foot_3wA {
+    text-align: center;
+    background-color: #444444;
+    padding: 30px;
+}
+
+.foot_3wA p, .foot_3wA a {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+@media screen and (min-width: 780px) {
+    .head-right nav ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: #ebe2db;
+    }
+
+    nav ul li {
+        border: none;
+        padding: 10px 20px;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer_box{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    main, header {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .head-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .head-right nav ul {
+        background-color: transparent;
+    }
+
+    .head-right nav ul li {
+        margin: 0 20px;
+    }
+}

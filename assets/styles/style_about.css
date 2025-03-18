@@ -1,0 +1,37 @@
+header nav ul li:first-child {
+    border-top: 1px solid black;
+}
+
+h2 {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.guests {
+    background-color: #ebe2db;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.guests img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 780px) {
+    .guests {
+        flex-wrap: wrap;
+    }
+
+    figure {
+        width: 45%;
+    }
+}

@@ -1,0 +1,72 @@
+header nav ul li:first-child {
+    border-top: 1px solid black;
+}
+
+section {
+    text-align: center;
+}
+
+.menus h1 {
+    font-family: "Merienda", cursive;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.controls button {
+    margin: 20px;
+    border: none;
+    border-radius: none;
+    background-color: #ebe2db;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.controls button:hover {
+    background-color: #950000;
+    cursor: pointer;
+}
+
+.controls button:active {
+    position: relative;
+    top: 1px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ebe2db;
+}
+
+.mix {
+    width: 260px;
+    margin: 20px 10px;
+}
+
+.img_menu {
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 3px 8px rgba(76,67,67,.5);
+}
+
+.fork-knife {
+    width: 50px;
+    height: auto;
+}
+
+figcaption p {
+    margin: 0;
+}
+
+.desserts_box img, .cocktail_box img {
+    width: 260px;
+    margin: 20px 10px;
+}
+
+@media screen and (min-width: 780px) {
+    header nav ul li:first-child {
+        border: none;
+    }  
+}

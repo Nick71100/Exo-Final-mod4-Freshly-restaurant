@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshly Restaurant contact Exo</title>
+    <link rel="icon" type="image/png" href="./assets/ressources/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/style_contact.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+</head>
+<body>
+    <header>
+        <div class="head-left">           
+                <img src="./assets/ressources/images/logo.png" alt="Logo" class="logo">
+                <h1><strong>Freshly Restaurant</strong></h1>           
+        </div>
+        <div class="head-right">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./menus.html">Menus</a></li>
+                    <li class="current"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact us</h2>
+            <p>If your want to make a reservation, please complete this form.</p>
+            <p><em>Fields with <span>*</span> are required.</em></p>
+
+            <form action="/" method="get">
+                <fieldset class="form_left">
+                    <legend>Reservation</legend>
+                    <div class="input_group">
+                        <label for="date" class="required">Date</label>
+                        <input id="date" type="date" name="the_date" required>
+                    </div>
+                    <div class="input_group">
+                        <label for="time" class="required">time</label>
+                        <input id="time" type="time" name="the_time" required>
+                    </div>
+                    <div class="input_group" class="required">
+                        <label for="number" class="required">Number of guests</label>
+                        <input id="number" type="number" name="the_numbers" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form_right">
+                    <legend>Details</legend>
+                    <div class="input_group">
+                        <label for="name" class="required">Nom</label>
+                        <input id="name" type="text" name="nom" required>
+                    </div>
+                    <div class="input_group">
+                        <label for="mail">Email</label>
+                        <input id="mail" type="email" name="mail">
+                    </div>
+                    <div class="input_group">
+                        <label for="phone" class="required">Telephone</label>
+                        <input id="phone" type="tel" name="phone" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="request">
+                    <legend>Further request</legend>
+                    <textarea name="request" id="request"></textarea>
+                </fieldset>
+
+                <div class="reserve_box">
+                    <input type="submit" value="reserve" class="reserve">
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h2>Our location</h2>
+            <div id="map"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="footer_box">
+                <h3>Opening hours</h3>
+                <p>Monday: Closed</p>
+                <p>Tue-Wed : 9am - 10pm</p>
+                <p>Thu-Fri : 9am - 10pm</p>
+                <p>Sat-Sun : 5pm - 10pm</p>
+            </div>
+            <div class="footer_box">
+                <h3>Contact</h3>
+                <p>13 Christopher Street</p>
+                <p>New York,</p>
+                <p>NY 10014-3543</p>
+                <p class="tel">+01 2000 800 9999</p>
+            </div>
+            <div class="footer_box">
+                <h3>Social networks</h3>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://fr.pinterest.com/"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+        
+        <div class="foot_3wA">
+            <img src="./assets/ressources/images/logo-3wa.png" alt="Propriété de la 3W Academy">
+            <p>
+                Cet exercice de <a href="#">3W Academy</a> est mis à disposition <a href="#">pour l'usage personnel des étidiants. Pas de  Rediffusion - Atttribution - Pas d'utilisation Commerciale - Pas de Modification - International</a>.
+            </p>
+            <p>
+                Les autorisations au-delà du champ de cettte license peuvent être obtenues auprès de <a href="#">contact@3wa.fr</a>. Les maquettes ont été réééalisées par <a href="#">Catherine Denos</a>.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/55a698f7a1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+    <script type="text/javascript">
+        var lat = 48.852969;
+        var lon = 2.349903;
+        var macarte = null;
+        function initMap() {
+            macarte = L.map('map').setView([lat, lon], 11);
+            L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+                attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+                minZoom: 1,
+                maxZoom: 20
+            }).addTo(macarte);
+        }
+        window.onload = function(){
+    initMap(); 
+        };
+    </script>
+</body>
+</html>
